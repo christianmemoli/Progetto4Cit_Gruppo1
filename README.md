@@ -1,2 +1,2 @@
 # Progetto4Cit_Gruppo1
-Gruppo Spinabelli, Eteri, Aresi, Xhyra e Lungu
+Gruppo 1 4Cit
