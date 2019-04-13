@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="413.0" fitWidth="608.0" layoutX="-4.0" layoutY="-4.0" nodeOrientation="INHERIT">
+         <image>
+            <Image url="@MERRYWEATHER.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label alignment="BASELINE_LEFT" layoutX="104.0" layoutY="20.0" text="MERRYWEATHER">
+         <font>
+            <Font name="Algerian" size="45.0" />
+         </font>
+      </Label>
+      <Button layoutX="456.0" layoutY="145.0" mnemonicParsing="false" text="REGISTRATI" />
+      <Button layoutX="477.0" layoutY="211.0" mnemonicParsing="false" text="LOGIN" />
+      <Label layoutX="359.0" layoutY="100.0" text="Sei già cliente?Accedi alla tua areapersonale!" />
+      <Label layoutX="440.0" layoutY="186.0" text="Iscriviti e inizia a volare!" />
+   </children>
+</Pane>
