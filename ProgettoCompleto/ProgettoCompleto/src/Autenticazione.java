@@ -39,17 +39,34 @@ public class Autenticazione extends Cliente{
 		stream.close();
 	}*/
 	
-	/*public Cliente loginCliente(String email, String password, String codice_identificativo){
-		HashMap<Integer,Cliente> utenti = new HashMap<Integer,Cliente>();
-		Cliente d = null;
-		utenti.put(1, d);
-		utenti.remove(getCodice_identificativo());
-		if(utenti.containsKey(getCodice_identificativo())){
-			return utenti.get(codice_identificativo);
+	public Cliente loginCliente(String email, String password){
+		
+		
+		/*leggi la lista di clienti presenti nel file
+		e ciclali tutti, controllando ad uno ad uno se per quel i-esimo cliente email e pssw sono ugauli ai parametri in ingresso.
+		In quel caso, passo il cliente trovato con return
+		*/
+		ArrayListCliente utenti  = new ArrayListCliente();
+		try {
+			utenti.caricaDatiCliente();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		return null;
+		Cliente c = utenti.ricercaCliente(email, password);
+		
+		return c;
+			
+			
+		
+	
+		
+		
 	}
-	*/
+	
+	
+	
+	
 
 }
 

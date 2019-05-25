@@ -34,8 +34,9 @@ public class  Cliente implements java.io.Serializable {
 		this.nazione_di_nascita = nazione_di_nascita;
 		this.citta_di_nascita = citta_di_nascita;
 		this.data_di_nascita = data_di_nascita;
-		this.codice_identificativo = ""; // Concateniamo nome + cognome + Numero random
+		
 		this.email = email;
+		this.setCodice_identificativo();
 		
 		if(password.length()<6) {
 			throw new EccezioneException("Non si e rispettata la lunghezza prevista per la creazione di una password");
@@ -136,8 +137,11 @@ public class  Cliente implements java.io.Serializable {
 	/**
 	 * @param codice_identificativo the codice_identificativo to set
 	 */
-	public void setCodice_identificativo(String codice_identificativo) {
-		this.codice_identificativo = codice_identificativo;
+	public void setCodice_identificativo() {
+		//double casuale = Math.random();
+		Random random = new Random();
+		int miavar = random.nextInt(500);
+		this.codice_identificativo = nome + "" + cognome + "" + miavar;
 		// this.codice_identificativo = ""; // Concateniamo nome + cognome + Numero random
 	}
 
@@ -183,12 +187,8 @@ public class  Cliente implements java.io.Serializable {
 				+ ", citta_di_nascita=" + citta_di_nascita +", data_di_nascita="	+ data_di_nascita.toString()+ ", email=" + email + ", password=" + password + "]"+"\n";
 	}
 	
-	public String toStringCodice() {
-		//double casuale = Math.random();
-		Random random = new Random();
-		int miavar = random.nextInt(500);
-		return "" + nome + "" + cognome + "" + miavar + ""+"";
-	}
+	
+	
 	
 	
 	
