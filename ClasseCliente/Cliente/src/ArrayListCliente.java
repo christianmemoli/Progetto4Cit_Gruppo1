@@ -20,6 +20,19 @@ public class ArrayListCliente
 		list.add(c);
 	}
 	
+	public String ricercaCliente1(String codice_identificativo)
+	{
+		
+		for(Cliente cliente : list)
+		{
+			if(cliente.getCodice_identificativo().compareTo(codice_identificativo)== 0)
+			{
+				return cliente.toString() ;
+			}
+		}
+		return null ;
+	}
+	
 	public boolean rimuoviCliente(String codice_identificativo)
 	{
 		/*for(int i=0; i<list.size();i++)
@@ -38,6 +51,20 @@ public class ArrayListCliente
 			}
 		}
 		return false;		
+}
+	
+	public Cliente ricercaCliente(String email, String pass)
+	{
+		
+		for(Cliente cliente : list)
+		{
+			if((cliente.getEmail().compareTo(email)==0) && (cliente.getPassword().compareTo(pass)==0))
+			{
+				
+				return cliente;//costruttore di copia
+			}
+		}
+		return null;	//eccezione	
 }
 	
 	public void salvaDatiClienti() throws java.io.IOException {
@@ -67,10 +94,19 @@ public class ArrayListCliente
 		
 		
 	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "ArrayListCliente [list=" + list + "]";
+	}
 	
-	public void StampaLista()
+	/*public void StampaLista()
 	{
 		System.out.println(this.list.size());
+		System.out.println();
 		for (Cliente cliente : list) {
 			System.out.println(cliente.getCognome());
 			System.out.println(cliente.getNome());
@@ -86,6 +122,6 @@ public class ArrayListCliente
 			System.out.println();
 		}
 	}
-		
+	*/	
 	
 }
