@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@sediliaereo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" text="PRENOTA UN VOLO">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="225.0" layoutY="195.0" promptText="DATA" />
+      <Label layoutX="14.0" layoutY="107.0" text="AEREOPORTO DI PARTENZA:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="152.0" text="AEREOPORTO DI ARRIVO:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="199.0" text="DATA DI PARTENZA">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="273.0" />
+      <Label layoutX="17.0" layoutY="245.0" text="NUMERO POSTO:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="286.0" text="BAGAGLI A MANO?">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="225.0" layoutY="286.0" mnemonicParsing="false" text="SI" textFill="WHITE" />
+      <CheckBox layoutX="279.0" layoutY="286.0" mnemonicParsing="false" text="NO" textFill="WHITE" />
+      <CheckBox layoutX="225.0" layoutY="318.0" mnemonicParsing="false" text="SI" textFill="WHITE" />
+      <CheckBox layoutX="280.0" layoutY="318.0" mnemonicParsing="false" text="NO" textFill="WHITE" />
+      <Label layoutX="19.0" layoutY="318.0" text="BAGALI IN STIVA?">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="225.0" layoutY="148.0" />
+      <ComboBox layoutX="225.0" layoutY="241.0" prefWidth="150.0" />
+      <TextField layoutX="225.0" layoutY="103.0" />
+      <Button layoutX="483.0" layoutY="348.0" mnemonicParsing="false" text="CONFERMA" />
+   </children>
+</Pane>
